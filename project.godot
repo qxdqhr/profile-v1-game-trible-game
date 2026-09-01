@@ -1,0 +1,32 @@
+; Trible Game — Godot minimal dual-track. Portrait match-3 MVP.
+
+config_version=5
+
+[application]
+
+config/name="Trible Game"
+config/description="Minimal match-3 swap puzzle. Abstract gems. Dual-track with /testField/tribleGame."
+config/version="0.2.0"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SaveData="*res://scripts/save_data.gd"
+
+[display]
+
+window/size/viewport_width=360
+window/size/viewport_height=640
+window/size/mode=0
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+window/handheld/orientation=1
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+renderer/rendering_method.web="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

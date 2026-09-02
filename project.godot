@@ -13,6 +13,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Sa2kitCjk="*res://addons/sa2kit_godot/autoload/cjk_boot.gd"
+
 SaveData="*res://scripts/save_data.gd"
 
 [display]
@@ -30,3 +32,11 @@ renderer/rendering_method="mobile"
 renderer/rendering_method.mobile="mobile"
 renderer/rendering_method.web="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
+
+[gui]
+
+theme/custom_font="res://addons/sa2kit_godot/fonts/SourceHanSansCN-Regular.otf"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/sa2kit_godot/plugin.cfg")
